@@ -8,11 +8,19 @@
 | `/backend/docs/` | R01/R03 | - | - | 后端文档 |
 | `/frontend/docs/` | R01/R04 | - | - | 前端文档 |
 | `/ai-service/docs/` | R01/R05 | - | - | AI 文档 |
-| `/backend/src/` | R03 | - | - | 后端代码 |
-| `/frontend/src/` | R04 | - | - | 前端代码 |
-| `/ai-service/src/` | R05 | - | - | AI 代码 |
-| `/scripts/` | R06 | - | - | 部署脚本 |
-| `/deploy/` | R06 | - | - | 部署配置 |
+| `/backend/src/` | R03 | - | 2026-03-02 | 后端代码 |
+| `/frontend/src/` | R04 | - | 2026-03-02 | 前端代码 ✅ |
+| `/ai-service/app/` | R05 | - | 2026-03-02 | AI 服务代码 |
+| `/scripts/` | R06 | - | 2026-03-02 | 部署脚本 |
+| `/docker-compose.dev.yml` | R06 | - | 2026-03-02 | 本地开发环境 |
+| `/railway.toml` | R06 | - | 2026-03-02 | Railway 配置 |
+| `/vercel.json` | R06 | - | 2026-03-02 | Vercel 配置 |
+| `/backend/Dockerfile` | R06 | - | 2026-03-02 | 后端镜像 |
+| `/ai-service/Dockerfile` | R06 | - | 2026-03-02 | AI 服务镜像 |
+| `/ai-service/requirements.txt` | R05 | - | 2026-03-02 | Python 依赖 |
+| `/ai-service/.env.example` | R05 | - | 2026-03-02 | 环境变量模板 |
+| `/.env.example` | R06 | - | 2026-03-02 | 项目环境变量模板 |
+| `/.gitignore` | R06 | - | 2026-03-02 | Git 忽略规则 |
 
 ## 并行工作规则
 
