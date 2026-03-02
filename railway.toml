@@ -4,7 +4,9 @@
 [build]
 # 使用 Dockerfile 构建方式
 builder = "DOCKERFILE"
-dockerfilePath = "backend/Dockerfile"
+dockerfilePath = "Dockerfile"
+# 构建上下文设置为 backend 目录
+context = "backend"
 
 # [build] 使用 Gradle 构建方式（备选方案，如不使用 Dockerfile）
 # buildCommand = "./gradlew clean build -x test --no-daemon"
@@ -12,7 +14,7 @@ dockerfilePath = "backend/Dockerfile"
 
 [deploy]
 # 健康检查路径
-healthcheckPath = "/actuator/health"
+healthcheckPath = "/api/v1/health"
 healthcheckTimeout = 300
 # 启动超时时间（秒）
 startTimeout = 600
