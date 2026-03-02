@@ -1,15 +1,11 @@
 # Railway Configuration - Spring Boot Backend
-# 使用 Nixpacks 构建器
+# 使用 Dockerfile 构建，Dockerfile 在项目根目录
 
 [build]
-# 使用 Nixpacks
-builder = "NIXPACKS"
-# 构建上下文为 backend 目录
-context = "backend"
-# 构建命令
-buildCommand = "./gradlew clean build -x test --no-daemon"
-# 监听文件模式
-watchPatterns = ["src/**", "build.gradle*"]
+# 使用 Dockerfile 构建器
+builder = "DOCKERFILE"
+# Dockerfile 在项目根目录
+dockerfilePath = "Dockerfile"
 
 [deploy]
 # 健康检查路径
@@ -17,8 +13,6 @@ healthcheckPath = "/api/v1/health"
 healthcheckTimeout = 300
 # 启动超时时间（秒）
 startTimeout = 600
-# 启动命令
-startCommand = "java -jar build/libs/*.jar"
 # 重启策略
 restartPolicyType = "ON_FAILURE"
 restartPolicyMaxRetries = 10
